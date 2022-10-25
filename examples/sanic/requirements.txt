@@ -1,2 +1,4 @@
 sanic>=20,<21
 uvicorn<1
+httpx>=0.23.0 # not directly required, pinned by Snyk to avoid a vulnerability
+websockets>=10.0 # not directly required, pinned by Snyk to avoid a vulnerability
