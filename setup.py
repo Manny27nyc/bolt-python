@@ -17,8 +17,8 @@ test_dependencies = [
     "pytest-asyncio<1",  # for async
     "aiohttp>=3,<4",  # for async
     "Flask-Sockets>=0.2,<1",
-    "Werkzeug<2",  # TODO: support Flask 2.x
-    "black==21.5b1",
+    "Werkzeug<4",  # TODO: support Flask 2.x
+    "black==24.3.0",
 ]
 
 setuptools.setup(
@@ -66,11 +66,11 @@ setuptools.setup(
             "chalice>=1.22.4,<2",
             "click>=7,<8",  # for chalice
             "CherryPy>=18,<19",
-            "Django>=3,<4",
+            "Django>=3,<6",
             "falcon>=2,<3",
             "fastapi<1",
             "Flask>=1,<2",
-            "Werkzeug<2",  # TODO: support Flask 2.x
+            "Werkzeug<4",  # TODO: support Flask 2.x
             "pyramid>=1,<2",
             "sanic>=20,<21",
             "starlette>=0.13,<1",
@@ -78,7 +78,7 @@ setuptools.setup(
             "tornado>=6,<7",
             # server
             "uvicorn<1",
-            "gunicorn>=20,<21",
+            "gunicorn>=20,<24",
             # Socket Mode 3rd party implementation
             "websocket_client>=1,<2",
         ],
